@@ -9,7 +9,7 @@
 %define		orgname		kcodecs
 
 Summary:	String encoding
-Name:		kde5-%{orgname}
+Name:		kf5-%{orgname}
 Version:	5.0.0
 Release:	0.1
 License:	GPL v2+/LGPL v2.1+
