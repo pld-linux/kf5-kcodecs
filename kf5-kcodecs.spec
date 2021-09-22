@@ -1,7 +1,7 @@
 # TODO:
 # - runtime Requires if any
 %define		kdeframever	5.86
-%define		qtver		5.14.0
+%define		qtver		5.15.2
 %define		kfname		kcodecs
 
 Summary:	String encoding
@@ -15,7 +15,7 @@ Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{v
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5Test-devel >= %{qtver}
-BuildRequires:	cmake >= 3.5
+BuildRequires:	cmake >= 3.16
 BuildRequires:	gperf
 BuildRequires:	kf5-extra-cmake-modules >= %{version}
 BuildRequires:	ninja
@@ -41,7 +41,7 @@ Summary(pl.UTF-8):	Pliki nagłówkowe dla programistów używających %{kfname}
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	Qt5Core-devel >= %{qtver}
-Requires:	cmake >= 3.5
+Requires:	cmake >= 3.16
 
 %description devel
 Header files for %{kfname} development.
