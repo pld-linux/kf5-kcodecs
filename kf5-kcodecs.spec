@@ -1,17 +1,17 @@
 # TODO:
 # - runtime Requires if any
-%define		kdeframever	5.90
+%define		kdeframever	5.91
 %define		qtver		5.15.2
 %define		kfname		kcodecs
 
 Summary:	String encoding
 Name:		kf5-%{kfname}
-Version:	5.90.0
+Version:	5.91.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	75f58c4dcc9fa1d4b16577c49067c638
+# Source0-md5:	643759d7e8b7edafcd96fe57a31f65ba
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5Test-devel >= %{qtver}
@@ -84,6 +84,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %{_libdir}/libKF5Codecs.so
 %{_includedir}/KF5/KCodecs
-%{_includedir}/KF5/kcodecs_version.h
 %{_libdir}/cmake/KF5Codecs
 %{_libdir}/qt5/mkspecs/modules/qt_KCodecs.pri
