@@ -3,18 +3,18 @@
 %bcond_with	tests		# build with tests
 # TODO:
 # - runtime Requires if any
-%define		kdeframever	5.99
+%define		kdeframever	5.100
 %define		qtver		5.15.2
 %define		kfname		kcodecs
 
 Summary:	String encoding
 Name:		kf5-%{kfname}
-Version:	5.99.0
-Release:	2
+Version:	5.100.0
+Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	6c0c7161e725bc10f6b5312d0ebf06da
+# Source0-md5:	d7d0a8c755c2413c74c93051ad784c69
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5Test-devel >= %{qtver}
